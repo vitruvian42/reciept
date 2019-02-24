@@ -49,7 +49,7 @@ export class HeroesComponent implements OnInit {
     // });
 
     var divContents = document.getElementById("htmlPage").innerHTML;
-    var printWindow = window.open('', '', 'height=600,width=1200');
+    var printWindow = window.open('', '', 'height=300,width=1200');
     printWindow.document.write('<html><head><title>DIV Contents</title>');
     printWindow.document.write('</head><body >');
     printWindow.document.write(divContents);
