@@ -40,6 +40,20 @@ export class HeroesComponent implements OnInit {
 
   }
 
+  change(val){
+    if(val=="morning"){
+      this.start_addr = "11 Barker Ave, White Plains, NY"
+      this.end_addr = "100 Manhattanville Rd, Purchase, NY"
+      this.miles = "4.36 mi"
+      this.minutes = "14 min"
+    }else if(val=="evening"){
+      this.start_addr = "100 Manhattanville Rd, Purchase, NY"
+      this.end_addr = "11 Barker Ave, White Plains, NY"
+      this.miles = "5.86 mi"
+      this.minutes = "11 min"
+    }
+  }
+
   downloadpdf(){
     console.log(document.querySelector("#htmlPage"))
     // html2canvas(document.querySelector("#htmlPage")).then(canvas => {
