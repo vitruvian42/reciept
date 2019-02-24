@@ -1,0 +1,1141 @@
+<div class="container" style="width:27%;float:left;margin-left: 1%;">
+  <h1>Reciept Form</h1>
+  <form>
+      <div class="form-group">
+        <label for="price">Type</label>
+        <input type="text" class="form-control" id="type" [(ngModel)]="type" name="type" style="width:80%">
+      </div>
+
+    <div class="form-group">
+      <label for="price">Trip Fare</label>
+      <input type="number" class="form-control" id="price" [(ngModel)]="price" name="price" style="width:80%">
+    </div>
+
+    <div class="form-group">
+      <label for="time_price">Tolls</label>
+      <input type="number" class="form-control" id="tolls" [(ngModel)]="tolls" name="tolls" style="width:80%">
+    </div>
+
+    <div class="form-group">
+      <label for="date">Date</label>
+      <input type="text" class="form-control" id="date" [(ngModel)]="date" name="date" style="width:80%">
+    </div>
+
+    <div class="form-group">
+      <label for="start_time">Start Time</label>
+      <input type="text" class="form-control" id="start_time" [(ngModel)]="start_time" name="start_time" style="width:80%">
+    </div>
+
+    <div class="form-group">
+      <label for="start_addr">Start Address</label>
+      <input type="text" class="form-control" id="start_addr" [(ngModel)]="start_addr" name="start_addr" style="width:80%">
+    </div>
+
+    <div class="form-group">
+      <label for="end_time">End Time</label>
+      <input type="text" class="form-control" id="end_time" [(ngModel)]="end_time" name="end_time" style="width:80%">
+    </div>
+
+    <div class="form-group">
+      <label for="end_addr">End Address</label>
+      <input type="text" class="form-control" id="end_addr" [(ngModel)]="end_addr" name="end_addr" style="width:80%">
+    </div>
+
+    <div class="form-group">
+      <label for="driver">Driver</label>
+      <input type="text" class="form-control" id="driver" [(ngModel)]="driver" name="driver" style="width:80%">
+    </div>
+
+    <div class="form-group">
+      <label for="miles">Miles</label>
+      <input type="text" class="form-control" id="miles" [(ngModel)]="miles" name="miles" style="width:80%">
+    </div>
+
+    <div class="form-group">
+      <label for="minutes">Minutes</label>
+      <input type="text" class="form-control" id="minutes" [(ngModel)]="minutes" name="minutes" style="width:80%">
+    </div>
+
+
+    <button (click)="downloadpdf()" class="btn btn-success">Download</button>
+
+  </form>
+</div>
+
+  <div style="background-color:#d6d6d5;margin:0;padding:0;width:70%;float:left;" id="htmlPage"> 
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#d6d6d5;border:none;border-collapse:collapse;border-spacing:0;width:100%" bgcolor="#d6d6d5">
+      <tbody>
+        <tr>
+          <td align="center">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;max-width:700px;width:100%" class="m_8137549319940100129m_-5136504817035928352wrapper">
+              <tbody>
+                <tr>
+                  <td style="background-color:#ffffff" align="center">
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;margin:auto;max-width:700px;width:100%" class="m_8137549319940100129m_-5136504817035928352tron">
+                      <tbody>
+                        <tr>
+                          <td align="center">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff;border:none;border-collapse:collapse;border-spacing:0;margin:auto;width:100%" bgcolor="#ffffff" class="m_8137549319940100129m_-5136504817035928352basetable">
+                              <tbody>
+                                <tr>
+                                  <td align="center">
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="m_8137549319940100129m_-5136504817035928352basetable" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" style="background-color:#ffffff">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="m_8137549319940100129m_-5136504817035928352basetable" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td>
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="m_8137549319940100129m_-5136504817035928352basetable" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td bgcolor="#ffffff">
+                                                            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                              <tbody>
+                                                                <tr>
+                                                                  <td align="left" style="direction:ltr;text-align:left">
+                                                                    <table border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                      <tbody>
+                                                                        <tr>
+                                                                          <td bgcolor="#C6DAFF" style="direction:ltr;text-align:left">
+                                                                            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                              <tbody>
+                                                                                <tr>
+                                                                                  <td width="14" style="direction:ltr;text-align:left">&nbsp;</td>
+                                                                                  <td align="left" style="direction:ltr;text-align:left">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                      <tbody>
+                                                                                        <tr>
+                                                                                          <td align="center">
+                                                                                            <table border="0" cellpadding="0" cellspacing="0" class="m_8137549319940100129m_-5136504817035928352t11of12 m_8137549319940100129m_-5136504817035928352layout" align="center" style="border:none;border-collapse:collapse;border-spacing:0;max-width:616px;width:100%">
+                                                                                              <tbody>
+                                                                                                <tr>
+                                                                                                  <td align="center" style="font-size:1px;height:1px;line-height:1px;padding-left:0px!important;padding-right:0px!important">
+                                                                                                    <table border="0" cellpadding="0" cellspacing="0" class="m_8137549319940100129m_-5136504817035928352t10of12 m_8137549319940100129m_-5136504817035928352layout" align="center" style="border:none;border-collapse:collapse;border-spacing:0;max-width:560px;width:100%">
+                                                                                                      <tbody>
+                                                                                                        <tr>
+                                                                                                          <td width="12" style="font-size:1px;height:1px;line-height:1px;padding-left:0px!important;padding-right:0px!important;direction:ltr;text-align:left">&nbsp;</td>
+                                                                                                          <td style="font-size:1px;height:1px;line-height:1px;padding-left:0px!important;padding-right:0px!important;direction:ltr;text-align:left">
+                                                                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:fixed;width:100%">
+                                                                                                              <tbody>
+                                                                                                                <tr>
+                                                                                                                  <td style="direction:ltr;text-align:left">
+                                                                                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                                      <tbody>
+                                                                                                                        <tr>
+                                                                                                                          <td class="m_8137549319940100129m_-5136504817035928352logo" align="left" style="padding-top:45px;padding-bottom:40px;direction:ltr;text-align:left" valign="middle">
+                                                                                                                            <table border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                                              <tbody>
+                                                                                                                                <tr>
+                                                                                                                                  <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1 m_8137549319940100129m_-5136504817035928352black" valign="top" align="left" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:30px;line-height:30px;padding-right:12px;padding-top:5px;direction:ltr;text-align:left">
+                                                                                                                                    <img src="https://ci3.googleusercontent.com/proxy/87F6jz5vJfmoaXp426i9ulH-lJZmIJjV7eSkQ9ZJwoUWsvjNIYxyFVmW9Nj6yyvykTxyxRYhU1spEy3aSlxCY4x3taeldjWS-HQJTGIa_kE7uS_lEO5CNQ=s0-d-e1-ft#http://d1a3f4spazzrp4.cloudfront.net/receipt_v3/receipt_uber_logo.png" width="69" height="" border="0" style="clear:both;display:block;width:100%;height:auto;max-height:24px;max-width:69px;min-height:19px;min-width:53px;outline:none;text-decoration:none" class="CToWUd">
+                                                                                                                                    </td>
+                                                                                                                                    <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1 m_8137549319940100129m_-5136504817035928352black" width="80%" align="right" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;text-align:right;direction:ltr" valign="middle">
+                                                                                                                                      <div>Total: 
+                                                                                                                                        <span class="m_8137549319940100129m_-5136504817035928352Uber18_text_p2" style="color:#000000;font-family:'Uber18-Text-Bold','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:12px;line-height:18px"> ${{(((price+tolls)) + ((price+tolls)*4/100) + ((price+tolls)*2.5/100) )| number}}  </span>
+                                                                                                                                      </div>
+                                                                                                                                      <span class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1 m_8137549319940100129m_-5136504817035928352black" style="color:#000000;font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:12px;line-height:15px"> {{date}} </span>
+                                                                                                                                    </td>
+                                                                                                                                  </tr>
+                                                                                                                                </tbody>
+                                                                                                                              </table>
+                                                                                                                            </td>
+                                                                                                                          </tr>
+                                                                                                                        </tbody>
+                                                                                                                      </table>
+                                                                                                                    </td>
+                                                                                                                  </tr>
+                                                                                                                </tbody>
+                                                                                                              </table>
+                                                                                                            </td>
+                                                                                                            <td width="12" style="font-size:1px;height:1px;line-height:1px;padding-left:0px!important;padding-right:0px!important;direction:ltr;text-align:left">&nbsp;</td>
+                                                                                                          </tr>
+                                                                                                        </tbody>
+                                                                                                      </table>
+                                                                                                    </td>
+                                                                                                  </tr>
+                                                                                                </tbody>
+                                                                                              </table>
+                                                                                            </td>
+                                                                                          </tr>
+                                                                                        </tbody>
+                                                                                      </table>
+                                                                                    </td>
+                                                                                    <td width="14" style="direction:ltr;text-align:left">&nbsp;</td>
+                                                                                  </tr>
+                                                                                </tbody>
+                                                                              </table>
+                                                                            </td>
+                                                                          </tr>
+                                                                        </tbody>
+                                                                      </table>
+                                                                    </td>
+                                                                  </tr>
+                                                                </tbody>
+                                                              </table>
+                                                              <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                <tbody>
+                                                                  <tr>
+                                                                    <td align="left" style="direction:ltr;text-align:left">
+                                                                      <table border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                        <tbody>
+                                                                          <tr>
+                                                                            <td background="https://ci3.googleusercontent.com/proxy/R--2c9TwHm8_Cz-q_1N4zb5TReodU-wbPEI5yZQF2JdPI1Vu8feaoHiqpdmbOdALc9kLfizacacgxQwbCQkHSRLmPkpl9VvBP3HY4InYupZgD7QRXJYQgBhB08G5iw=s0-d-e1-ft#https://s3.amazonaws.com/uber-static/emails/2017/01/receipt_18_headerbg.png" bgcolor="#C6DAFF" width="700" valign="top" style="background-repeat:no-repeat;background-position:right bottom;direction:ltr;text-align:left">
+                                                                              <div>
+                                                                                <div style="font-size:0;line-height:0">
+                                                                                  <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                    <tbody>
+                                                                                      <tr>
+                                                                                        <td width="14" style="direction:ltr;text-align:left">&nbsp;</td>
+                                                                                        <td align="left" style="direction:ltr;text-align:left">
+                                                                                          <table border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                            <tbody>
+                                                                                              <tr>
+                                                                                                <td align="center">
+                                                                                                  <table border="0" cellpadding="0" cellspacing="0" class="m_8137549319940100129m_-5136504817035928352t11of12 m_8137549319940100129m_-5136504817035928352layout" align="center" style="border:none;border-collapse:collapse;border-spacing:0;max-width:616px;width:100%">
+                                                                                                    <tbody>
+                                                                                                      <tr>
+                                                                                                        <td align="center" style="font-size:1px;height:1px;line-height:1px;padding-left:0px!important;padding-right:0px!important">
+                                                                                                          <table border="0" cellpadding="0" cellspacing="0" class="m_8137549319940100129m_-5136504817035928352t10of12 m_8137549319940100129m_-5136504817035928352layout" align="center" style="border:none;border-collapse:collapse;border-spacing:0;max-width:560px;width:100%">
+                                                                                                            <tbody>
+                                                                                                              <tr>
+                                                                                                                <td width="12" style="font-size:1px;height:1px;line-height:1px;padding-left:0px!important;padding-right:0px!important;direction:ltr;text-align:left">&nbsp;</td>
+                                                                                                                <td style="font-size:1px;height:1px;line-height:1px;padding-left:0px!important;padding-right:0px!important;direction:ltr;text-align:left">
+                                                                                                                  <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:fixed;width:100%">
+                                                                                                                    <tbody>
+                                                                                                                      <tr>
+                                                                                                                        <td style="direction:ltr;text-align:left">
+                                                                                                                          <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                                            <tbody>
+                                                                                                                              <tr>
+                                                                                                                                <td align="left" style="font-size:0px;direction:ltr;text-align:left">
+                                                                                                                                  <table border="0" cellpadding="0" cellspacing="0" class="m_8137549319940100129m_-5136504817035928352t7of12 m_8137549319940100129m_-5136504817035928352layout" style="border:none;border-collapse:collapse;border-spacing:0;display:inline-block;max-width:392px;vertical-align:bottom;width:100%">
+                                                                                                                                    <tbody>
+                                                                                                                                      <tr>
+                                                                                                                                        <td style="font-size:1px;height:1px;line-height:1px;padding-left:0px!important;padding-right:0px!important;direction:ltr;text-align:left">
+                                                                                                                                          <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:fixed;width:100%">
+                                                                                                                                            <tbody>
+                                                                                                                                              <tr>
+                                                                                                                                                <td class="m_8137549319940100129m_-5136504817035928352Uber18_p3 m_8137549319940100129m_-5136504817035928352black m_8137549319940100129m_-5136504817035928352header_h3" style="color:rgb(0,0,0);font-family:'Uber18-Medium',Helvetica,Arial,sans-serif;font-size:34px;line-height:38px;padding-bottom:13px;direction:ltr;text-align:left"> Thanks for riding, shreya </td>
+                                                                                                                                              </tr>
+                                                                                                                                              <tr>
+                                                                                                                                                <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1 m_8137549319940100129m_-5136504817035928352black" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;direction:ltr;text-align:left">
+                                                                                                                                                  <table border="0" cellpadding="0" cellspacing="0" class="m_8137549319940100129m_-5136504817035928352t6of12 m_8137549319940100129m_-5136504817035928352layout" align="left" style="border:none;border-collapse:collapse;border-spacing:0;max-width:308px;width:100%">
+                                                                                                                                                    <tbody>
+                                                                                                                                                      <tr>
+                                                                                                                                                        <td style="font-size:1px;height:1px;line-height:1px;padding-left:0px!important;padding-right:0px!important;direction:ltr;text-align:left">
+                                                                                                                                                          <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:fixed;width:100%">
+                                                                                                                                                            <tbody>
+                                                                                                                                                              <tr>
+                                                                                                                                                                <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1 m_8137549319940100129m_-5136504817035928352black m_8137549319940100129m_-5136504817035928352header_Uber18_text_p1" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:20px;line-height:26px;padding-bottom:40px;direction:ltr;text-align:left"> We hope you enjoyed your ride this {{type}}. </td>
+                                                                                                                                                              </tr>
+                                                                                                                                                            </tbody>
+                                                                                                                                                          </table>
+                                                                                                                                                        </td>
+                                                                                                                                                      </tr>
+                                                                                                                                                    </tbody>
+                                                                                                                                                  </table>
+                                                                                                                                                </td>
+                                                                                                                                              </tr>
+                                                                                                                                            </tbody>
+                                                                                                                                          </table>
+                                                                                                                                        </td>
+                                                                                                                                      </tr>
+                                                                                                                                    </tbody>
+                                                                                                                                  </table>
+                                                                                                                                  <table border="0" cellpadding="0" cellspacing="0" class="m_8137549319940100129m_-5136504817035928352t3of12 m_8137549319940100129m_-5136504817035928352layout m_8137549319940100129m_-5136504817035928352gmail_header_icon_table" style="border:none;border-collapse:collapse;border-spacing:0;display:inline-block;max-width:144px;vertical-align:bottom;width:100%">
+                                                                                                                                    <tbody>
+                                                                                                                                      <tr>
+                                                                                                                                        <td style="font-size:1px;height:1px;line-height:1px;padding-left:0px!important;padding-right:0px!important;direction:ltr;text-align:left">
+                                                                                                                                          <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:fixed;width:100%">
+                                                                                                                                            <tbody>
+                                                                                                                                              <tr>
+                                                                                                                                                <td style="padding-top:0px;direction:ltr;text-align:left">
+                                                                                                                                                  <img class="m_8137549319940100129m_-5136504817035928352header_icon CToWUd" src="https://ci3.googleusercontent.com/proxy/lxbXsWRccvRn38H5YdWt0ILKFhNMlsmFKX7aXGM6-2sStCXTvE6yHVCQO4l0l3GhMx_x_bey7t0xOYVKuDMjSswYpuH7N_uFke61RG-ZRpRr0FoVdQU7kjUyOkvNqmE=s0-d-e1-ft#http://d1a3f4spazzrp4.cloudfront.net/receipt_v3/receipt_18_rider_default.png" width="144" height="" border="0" style="clear:both;display:block;height:auto;margin:0 0 0 auto;max-height:144px;max-width:144px;outline:none;text-decoration:none;width:100%">
+                                                                                                                                                  </td>
+                                                                                                                                                </tr>
+                                                                                                                                              </tbody>
+                                                                                                                                            </table>
+                                                                                                                                          </td>
+                                                                                                                                        </tr>
+                                                                                                                                      </tbody>
+                                                                                                                                    </table>
+                                                                                                                                  </td>
+                                                                                                                                </tr>
+                                                                                                                              </tbody>
+                                                                                                                            </table>
+                                                                                                                          </td>
+                                                                                                                        </tr>
+                                                                                                                      </tbody>
+                                                                                                                    </table>
+                                                                                                                  </td>
+                                                                                                                  <td width="12" style="font-size:1px;height:1px;line-height:1px;padding-left:0px!important;padding-right:0px!important;direction:ltr;text-align:left">&nbsp;</td>
+                                                                                                                </tr>
+                                                                                                              </tbody>
+                                                                                                            </table>
+                                                                                                          </td>
+                                                                                                        </tr>
+                                                                                                      </tbody>
+                                                                                                    </table>
+                                                                                                  </td>
+                                                                                                </tr>
+                                                                                              </tbody>
+                                                                                            </table>
+                                                                                          </td>
+                                                                                          <td width="14" style="direction:ltr;text-align:left">&nbsp;</td>
+                                                                                        </tr>
+                                                                                      </tbody>
+                                                                                    </table>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </td>
+                                                                            </tr>
+                                                                          </tbody>
+                                                                        </table>
+                                                                      </td>
+                                                                    </tr>
+                                                                  </tbody>
+                                                                </table>
+                                                                <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                  <tbody>
+                                                                    <tr>
+                                                                      <td align="center">
+                                                                        <table border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                          <tbody>
+                                                                            <tr>
+                                                                              <td align="center">
+                                                                                <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;max-width:648px;width:100%" bgcolor="#ffffff">
+                                                                                  <tbody>
+                                                                                    <tr>
+                                                                                      <td class="m_8137549319940100129m_-5136504817035928352outsidegutter" align="left" bgcolor="#ffffff" style="padding:45px 14px 0px 14px;direction:ltr;text-align:left">
+                                                                                        <table border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                          <tbody>
+                                                                                            <tr>
+                                                                                              <td align="center">
+                                                                                                <table border="0" cellpadding="0" cellspacing="0" class="m_8137549319940100129m_-5136504817035928352t10of12" style="border:none;border-collapse:collapse;border-spacing:0;max-width:560px;width:100%">
+                                                                                                  <tbody>
+                                                                                                    <tr>
+                                                                                                      <td style="padding-left:0px;padding-right:0px">
+                                                                                                        <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                          <tbody>
+                                                                                                            <tr>
+                                                                                                              <td align="left" style="padding-left:12px;padding-right:12px">
+                                                                                                                <table border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                                  <tbody>
+                                                                                                                    <tr>
+                                                                                                                      <td class="m_8137549319940100129m_-5136504817035928352Uber18_p3 m_8137549319940100129m_-5136504817035928352black m_8137549319940100129m_-5136504817035928352total_head" valign="top" align="left" style="color:rgb(0,0,0);font-family:'Uber18-Medium',Helvetica,Arial,sans-serif;font-size:44px;line-height:44px;padding-right:12px;direction:ltr;text-align:left"> Total </td>
+                                                                                                                      <td class="m_8137549319940100129m_-5136504817035928352Uber18_p3 m_8137549319940100129m_-5136504817035928352black m_8137549319940100129m_-5136504817035928352total_head" valign="top" align="right" style="color:rgb(0,0,0);font-family:'Uber18-Medium',Helvetica,Arial,sans-serif;font-size:44px;line-height:44px;text-align:right;direction:ltr"> ${{(((price+tolls)) + ((price+tolls)*4/100) + ((price+tolls)*2.5/100) )| number}} </td>
+                                                                                                                    </tr>
+                                                                                                                  </tbody>
+                                                                                                                </table>
+                                                                                                              </td>
+                                                                                                            </tr>
+                                                                                                          </tbody>
+                                                                                                        </table>
+                                                                                                        <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                          <tbody>
+                                                                                                            <tr>
+                                                                                                              <td align="left" style="padding-left:12px;padding-right:12px"></td>
+                                                                                                            </tr>
+                                                                                                          </tbody>
+                                                                                                        </table>
+                                                                                                        <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                          <tbody>
+                                                                                                            <tr>
+                                                                                                              <td align="left" style="padding-left:12px;padding-right:12px">
+                                                                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                                  <tbody>
+                                                                                                                    <tr>
+                                                                                                                      <td style="padding-top:26px;padding-bottom:26px">
+                                                                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:fixed;width:100%">
+                                                                                                                          <tbody>
+                                                                                                                            <tr>
+                                                                                                                              <td valign="top" align="left" style="font-size:1px;line-height:1px;background-color:#009eb7"> &nbsp; </td>
+                                                                                                                            </tr>
+                                                                                                                          </tbody>
+                                                                                                                        </table>
+                                                                                                                      </td>
+                                                                                                                    </tr>
+                                                                                                                  </tbody>
+                                                                                                                </table>
+                                                                                                              </td>
+                                                                                                            </tr>
+                                                                                                          </tbody>
+                                                                                                        </table>
+                                                                                                        <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                          <tbody>
+                                                                                                            <tr>
+                                                                                                              <td align="left" style="padding-left:12px;padding-right:12px">
+                                                                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                                  <tbody>
+                                                                                                                    <tr>
+                                                                                                                      <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1" valign="top" align="left" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;padding-bottom:5px;padding-right:12px;padding-top:5px;direction:ltr;text-align:left"> Trip fare </td>
+                                                                                                                      <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1" valign="top" align="right" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;padding-bottom:5px;padding-right:0px;padding-top:5px;text-align:right;direction:ltr"> ${{price}} </td>
+                                                                                                                    </tr>
+                                                                                                                  </tbody>
+                                                                                                                </table>
+                                                                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                                  <tbody>
+                                                                                                                    <tr>
+                                                                                                                      <td style="padding-top:26px;padding-bottom:26px">
+                                                                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:fixed;width:100%">
+                                                                                                                          <tbody>
+                                                                                                                            <tr>
+                                                                                                                              <td valign="top" align="left" style="font-size:1px;line-height:1px;background-color:#bdbdbd"> &nbsp; </td>
+                                                                                                                            </tr>
+                                                                                                                          </tbody>
+                                                                                                                        </table>
+                                                                                                                      </td>
+                                                                                                                    </tr>
+                                                                                                                  </tbody>
+                                                                                                                </table>
+                                                                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                                  <tbody>
+                                                                                                                    <tr>
+                                                                                                                      <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p2" valign="top" align="left" style="color:rgb(0,0,0);font-family:'Uber18-Text-Bold','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;padding-bottom:5px;padding-right:12px;padding-top:5px;direction:ltr;text-align:left"> Subtotal </td>
+                                                                                                                      <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p2" valign="top" align="right" style="color:rgb(0,0,0);font-family:'Uber18-Text-Bold','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;padding-bottom:5px;padding-top:5px;text-align:right;direction:ltr"> ${{price}} </td>
+                                                                                                                    </tr>
+                                                                                                                  </tbody>
+                                                                                                                </table>
+                                                                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                                    <tbody>
+                                                                                                                      <tr>
+                                                                                                                        <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p2" valign="top" align="left" style="color:rgb(0,0,0);font-family:'Uber18-Text-Bold','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;padding-bottom:5px;padding-right:12px;padding-top:5px;direction:ltr;text-align:left"> Tolls, Surcharges, and Fees  </td>
+                                                                                                                        <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p2" valign="top" align="right" style="color:rgb(0,0,0);font-family:'Uber18-Text-Bold','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;padding-bottom:5px;padding-top:5px;text-align:right;direction:ltr"> ${{tolls}}</td>
+                                                                                                                      </tr>
+                                                                                                                    </tbody>
+                                                                                                                  </table>
+                                                                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                                  <tbody>
+                                                                                                                    <tr>
+                                                                                                                      <td style="padding-top:26px;padding-bottom:26px">
+                                                                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:fixed;width:100%">
+                                                                                                                          <tbody>
+                                                                                                                            <tr>
+                                                                                                                              <td valign="top" align="left" style="font-size:1px;line-height:1px;background-color:#bdbdbd"> &nbsp; </td>
+                                                                                                                            </tr>
+                                                                                                                          </tbody>
+                                                                                                                        </table>
+                                                                                                                      </td>
+                                                                                                                    </tr>
+                                                                                                                  </tbody>
+                                                                                                                </table>
+                                                                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                                  <tbody>
+                                                                                                                    <tr>
+                                                                                                                      <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1" valign="top" align="left" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;padding-bottom:5px;padding-right:12px;padding-top:5px;direction:ltr;text-align:left"> Before Taxes </td>
+                                                                                                                      <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1" valign="top" align="right" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;padding-bottom:5px;padding-right:0px;padding-top:5px;text-align:right;direction:ltr"> ${{price+tolls}} </td>
+                                                                                                                    </tr>
+                                                                                                                  </tbody>
+                                                                                                                </table>
+                                                                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                                  <tbody>
+                                                                                                                    <tr>
+                                                                                                                      <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1" valign="top" align="left" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;padding-bottom:5px;padding-right:12px;padding-top:5px;direction:ltr;text-align:left"> NY State Black Car Fund (2.5%)</td>
+                                                                                                                      <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1" valign="top" align="right" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;padding-bottom:5px;padding-right:0px;padding-top:5px;text-align:right;direction:ltr"> ${{(price+tolls)*2.5/100|number}} </td>
+                                                                                                                    </tr>
+                                                                                                                  </tbody>
+                                                                                                                </table>
+                                                                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                                  <tbody>
+                                                                                                                    <tr>
+                                                                                                                      <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1" valign="top" align="left" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;padding-bottom:5px;padding-right:12px;padding-top:5px;direction:ltr;text-align:left"> ${{(price+tolls)*2.5/100|number}}</td>
+                                                                                                                      <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1" valign="top" align="right" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;padding-bottom:5px;padding-right:0px;padding-top:5px;text-align:right;direction:ltr"> ${{(price+tolls)*4/100|number}}</td>
+                                                                                                                    </tr>
+                                                                                                                  </tbody>
+                                                                                                                </table>
+                                                                                                              </td>
+                                                                                                            </tr>
+                                                                                                          </tbody>
+                                                                                                        </table>
+                                                                                                        <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                          <tbody>
+                                                                                                            <tr>
+                                                                                                              <td align="left" style="padding-left:12px;padding-right:12px">
+                                                                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                                  <tbody>
+                                                                                                                    <tr>
+                                                                                                                      <td style="padding-top:26px;padding-bottom:26px">
+                                                                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:fixed;width:100%">
+                                                                                                                          <tbody>
+                                                                                                                            <tr>
+                                                                                                                              <td valign="top" align="left" style="font-size:1px;line-height:1px;background-color:#bdbdbd"> &nbsp; </td>
+                                                                                                                            </tr>
+                                                                                                                          </tbody>
+                                                                                                                        </table>
+                                                                                                                      </td>
+                                                                                                                    </tr>
+                                                                                                                  </tbody>
+                                                                                                                </table>
+                                                                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                                  <tbody>
+                                                                                                                    <tr>
+                                                                                                                      <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p2" valign="top" align="left" style="color:rgb(0,0,0);font-family:'Uber18-Text-Bold','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;padding-bottom:5px;padding-right:12px;padding-top:5px;direction:ltr;text-align:left"> Amount Charged </td>
+                                                                                                                      <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1" valign="top" align="right" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;padding-bottom:5px;padding-top:5px;direction:ltr;text-align:left"> &nbsp; </td>
+                                                                                                                    </tr>
+                                                                                                                  </tbody>
+                                                                                                                </table>
+                                                                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                                  <tbody>
+                                                                                                                    <tr>
+                                                                                                                      <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1 m_8137549319940100129m_-5136504817035928352mobileCard_b_pad" valign="middle" align="left" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;padding-bottom:5px;padding-right:12px;padding-top:5px;direction:ltr;text-align:left">
+                                                                                                                        <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                                          <tbody>
+                                                                                                                            <tr>
+                                                                                                                              <td align="left" style="direction:ltr;text-align:left">
+                                                                                                                                <table align="left" width="initial" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:initial">
+                                                                                                                                  <tbody>
+                                                                                                                                    <tr>
+                                                                                                                                      <td align="left" width="55" style="padding-top:2px;padding-bottom:2px;direction:ltr;text-align:left">
+                                                                                                                                        <img id="m_8137549319940100129m_-5136504817035928352amex_icon" src="https://ci6.googleusercontent.com/proxy/jJVTFbLrJbrFFGAtd-h7kihNBgfLMAAfdOXd3FOUnzRXNhCQKHFx3nwBEf2kCcyB4RkEoGlxF4sC3BX34iWA_219abveogCbB1MjGZWZIiKEggPCQWRPU92NIQ=s0-d-e1-ft#http://d1a3f4spazzrp4.cloudfront.net/receipt_v3/Ub__ic_Amex_33x23@2x.png" width="35" height="23" border="0" style="clear:both;display:inline-block;height:23px;max-width:100%;outline:none;padding-right:18px;text-decoration:none;vertical-align:middle;width:32px" class="CToWUd">
+                                                                                                                                        </td>
+                                                                                                                                      </tr>
+                                                                                                                                    </tbody>
+                                                                                                                                  </table>
+                                                                                                                                  <table align="left" width="initial" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:initial">
+                                                                                                                                    <tbody>
+                                                                                                                                      <tr>
+                                                                                                                                        <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1" align="left" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;padding-bottom:2px;padding-right:5px;padding-top:2px;direction:ltr;text-align:left"> •••• 1008 </td>
+                                                                                                                                      </tr>
+                                                                                                                                    </tbody>
+                                                                                                                                  </table>
+                                                                                                                                  <table class="m_8137549319940100129m_-5136504817035928352desktopPipe" align="left" width="initial" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:initial">
+                                                                                                                                    <tbody>
+                                                                                                                                      <tr>
+                                                                                                                                        <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1" align="left" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;padding-bottom:2px;padding-right:5px;padding-top:2px;direction:ltr;text-align:left">
+                                                                                                                                          <span class="m_8137549319940100129m_-5136504817035928352desktopPipe" style="display:none;color:#bdbdbd">|</span>
+                                                                                                                                        </td>
+                                                                                                                                      </tr>
+                                                                                                                                    </tbody>
+                                                                                                                                  </table>
+                                                                                                                                  <table align="left" width="initial" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:initial">
+                                                                                                                                    <tbody>
+                                                                                                                                      <tr>
+                                                                                                                                        <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1" align="left" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;padding-bottom:2px;padding-top:2px;direction:ltr;text-align:left">
+                                                                                                                                          <span class="m_8137549319940100129m_-5136504817035928352Uber18_text_p3 m_8137549319940100129m_-5136504817035928352textcta" lang="x-textcta" style="color:#000000;font-family:'Uber18-Text-Medium',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;text-transform:uppercase">
+                                                                                                                                            <a href="https://email.uber.com/wf/click?upn=ITf-2BUi9bO5sUhPgUfzyAxiAlszZJrA2yIT7-2FMFM5bgsbN8U-2FhX3QvurlDc-2BhZ8CKBLruCMKTq7WJBn82Ool-2B7dauShI-2BG7ZVVpKW7eci3eA-3D_jB6DZ9HgcDSN7kqVyyc5AQ8r3c4YQh9d5AuCJFkPEYQNRsqU8qqc296q5rpB4ev3QTjJb9IN71fEPXJG3NCyN-2FT7eHIraTZRBs1e4PCmAHFuDUpP4Pf9J1WrEcsk3QMVV0No-2FHGYm2ZbClIG-2BrmE5YRg1SWHjfp-2FqoylB2yx95TzlZzwG7bvGKA29yo9PVICsCW7HChKZWn-2FeQs3qr0bGU60GniC-2FI13ysUq1VW-2F03bEmDsRfUQ1k-2FNAemZaDiv6UG8mkHEbWJiI9cszLJAVxyQDr-2Bky2CMQZk-2Br17QoQyhDrF94gUUyG0bDlt7WWcnzaVZgdbIEpdR24gJHqnDfO4riQpn55GDbUnrw9Jn0pBxp1gSfN-2BqxP0SgoyJfbWGcL0bXTV9p5j5-2FfrJxH9i682ol5gpkX0UwCRXyCxeWry0-3D" style="text-decoration:none;text-transform:none;color:#276ef1" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://email.uber.com/wf/click?upn%3DITf-2BUi9bO5sUhPgUfzyAxiAlszZJrA2yIT7-2FMFM5bgsbN8U-2FhX3QvurlDc-2BhZ8CKBLruCMKTq7WJBn82Ool-2B7dauShI-2BG7ZVVpKW7eci3eA-3D_jB6DZ9HgcDSN7kqVyyc5AQ8r3c4YQh9d5AuCJFkPEYQNRsqU8qqc296q5rpB4ev3QTjJb9IN71fEPXJG3NCyN-2FT7eHIraTZRBs1e4PCmAHFuDUpP4Pf9J1WrEcsk3QMVV0No-2FHGYm2ZbClIG-2BrmE5YRg1SWHjfp-2FqoylB2yx95TzlZzwG7bvGKA29yo9PVICsCW7HChKZWn-2FeQs3qr0bGU60GniC-2FI13ysUq1VW-2F03bEmDsRfUQ1k-2FNAemZaDiv6UG8mkHEbWJiI9cszLJAVxyQDr-2Bky2CMQZk-2Br17QoQyhDrF94gUUyG0bDlt7WWcnzaVZgdbIEpdR24gJHqnDfO4riQpn55GDbUnrw9Jn0pBxp1gSfN-2BqxP0SgoyJfbWGcL0bXTV9p5j5-2FfrJxH9i682ol5gpkX0UwCRXyCxeWry0-3D&amp;source=gmail&amp;ust=1548176119303000&amp;usg=AFQjCNELkUeWT7Di__ObnNfyvFD7po4IcA">Switch</a>
+                                                                                                                                          </span>
+                                                                                                                                        </td>
+                                                                                                                                      </tr>
+                                                                                                                                    </tbody>
+                                                                                                                                  </table>
+                                                                                                                                </td>
+                                                                                                                              </tr>
+                                                                                                                            </tbody>
+                                                                                                                          </table>
+                                                                                                                        </td>
+                                                                                                                        <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p3" valign="top" align="right" style="color:rgb(0,0,0);font-family:'Uber18-Text-Medium',Helvetica,Arial,sans-serif;font-size:20px;line-height:28px;padding-bottom:10px;padding-top:10px;text-align:right;direction:ltr"> ${{(((price+tolls)) + ((price+tolls)*4/100) + ((price+tolls)*2.5/100) )| number}} </td>
+                                                                                                                      </tr>
+                                                                                                                    </tbody>
+                                                                                                                  </table>
+                                                                                                                </td>
+                                                                                                              </tr>
+                                                                                                            </tbody>
+                                                                                                          </table>
+                                                                                                          <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                            <tbody>
+                                                                                                              <tr>
+                                                                                                                <td align="left" style="padding-left:12px;padding-right:12px"></td>
+                                                                                                              </tr>
+                                                                                                            </tbody>
+                                                                                                          </table>
+                                                                                                          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:none;border-collapse:collapse;border-spacing:0;direction:rtl;width:100%">
+                                                                                                            <tbody>
+                                                                                                              <tr>
+                                                                                                                <td class="m_8137549319940100129m_-5136504817035928352p1" valign="top" align="left" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:0px;line-height:28px;padding:5px 12px 5px 12px;text-align:left;direction:ltr">
+                                                                                                                  <table border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                                    <tbody>
+                                                                                                                      <tr>
+                                                                                                                        <td style="direction:ltr;text-align:left">
+                                                                                                                          <table border="0" cellpadding="0" cellspacing="0" class="m_8137549319940100129m_-5136504817035928352t7of12" style="border:none;border-collapse:collapse;border-spacing:0;direction:ltr;display:inline-block;max-width:392px;vertical-align:top;width:100%">
+                                                                                                                            <tbody>
+                                                                                                                              <tr>
+                                                                                                                                <td style="padding:6px 0px 6px 0px;direction:ltr;text-align:left">
+                                                                                                                                  <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:fixed;width:100%">
+                                                                                                                                    <tbody>
+                                                                                                                                      <tr>
+                                                                                                                                        <td style="direction:ltr;text-align:left">
+                                                                                                                                          <table border="0" cellpadding="0" cellspacing="0" class="m_8137549319940100129m_-5136504817035928352basetable" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:auto;width:100%">
+                                                                                                                                            <tbody>
+                                                                                                                                              <tr>
+                                                                                                                                                <td align="left" class="m_8137549319940100129m_-5136504817035928352Uber18_text_p2" style="color:rgb(0,0,0);font-family:'Uber18-Text-Bold','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:20px;text-align:left;direction:ltr">
+                                                                                                                                                  <a href="https://email.uber.com/wf/click?upn=RPcWxkTQoG6P9NvXwlv2wYxWh93fPYNEuoSsYWZV2yO81vUt3l9K54NalrT9bnDzTI1Y-2FJNFsRfXqcOC4XBh-2BAN3W8rQroyx5TD3br3v31Q-2FQrUWS32qsgx90RAFPCGTOK-2BhXO1MMfXg8tLto3JHw-2Fb-2F6kvC8D7lRcbZASAGLi012gznDf69H-2FJmmOVCxGqzT2lDohJ0MCA9AKIohy-2FMM2Ymz0tWlRUu3-2FHvU8LDr4v1wFptqUYSlET7wLOhR9g3z1gM0mcNQ1a0sSX0dFlQd2cLOqNADuQ7w6WNe2WPvgZElJz0Md5aN8CL0lfAGqiKIC0FwaB6XC7c-2Bf9BkC-2BCkj-2BgCvS6YYxptpgC42w9MgXLHKvayengtySheL-2BGbvFBB4ZH5G4kBrM-2F24wI7xV7JjEin5Ow9Y4mNS8b-2Fau-2FiuUzMG4YxRSkyhTqnxmSgt2kK7UHkU476PrVT4e56TKVwcR4UiU1nQ0n7ZDsQgFmoZQk-2BOJOg0LG-2BXgj35oV-2Ba4bU195bwOS305inmrXpYyc9lMrqy5Hfgg0E6fFy1hUkCTvX8gWkD7q4FqllPzz9y7DpeEZ4ukqsgPy6UOMB3GjCyzZqdLPXilVWiwoLmFEyWN7aoRZu7BSAbZemUs-2FF-2F8uubP1cNB7CuM8fb3NccjBGpB-2FpvsTagDfbsGUwWlTDqRlTiLU-2BXmeLYgkXG0CZDRPmD5dlPU3BVxOrFzHnoLMdQ-3D-3D_jB6DZ9HgcDSN7kqVyyc5AQ8r3c4YQh9d5AuCJFkPEYQNRsqU8qqc296q5rpB4ev3QTjJb9IN71fEPXJG3NCyN-2FT7eHIraTZRBs1e4PCmAHFuDUpP4Pf9J1WrEcsk3QMVV0No-2FHGYm2ZbClIG-2BrmE5YRg1SWHjfp-2FqoylB2yx95TzlZzwG7bvGKA29yo9PVICsCW7HChKZWn-2FeQs3qr0bGU60GniC-2FI13ysUq1VW-2F03bEmDsRfUQ1k-2FNAemZaDiv6UG8mkHEbWJiI9cszLJAVx0yHjwI2RY63cNgRD2ecyH2eRCWqCvtn58nl-2B-2F15aICjlAaRqY8MNgVKM0TzNKF0Ko275UQDW4XRvbyrgtIJ08sd85z4WRYH43RapItkLVubg2Lug3UDoJJdnxr2DFbKtgSRQLVKZjTYqonkAcICBDw-3D" style="text-decoration:none;color:#276ef1" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://email.uber.com/wf/click?upn%3DRPcWxkTQoG6P9NvXwlv2wYxWh93fPYNEuoSsYWZV2yO81vUt3l9K54NalrT9bnDzTI1Y-2FJNFsRfXqcOC4XBh-2BAN3W8rQroyx5TD3br3v31Q-2FQrUWS32qsgx90RAFPCGTOK-2BhXO1MMfXg8tLto3JHw-2Fb-2F6kvC8D7lRcbZASAGLi012gznDf69H-2FJmmOVCxGqzT2lDohJ0MCA9AKIohy-2FMM2Ymz0tWlRUu3-2FHvU8LDr4v1wFptqUYSlET7wLOhR9g3z1gM0mcNQ1a0sSX0dFlQd2cLOqNADuQ7w6WNe2WPvgZElJz0Md5aN8CL0lfAGqiKIC0FwaB6XC7c-2Bf9BkC-2BCkj-2BgCvS6YYxptpgC42w9MgXLHKvayengtySheL-2BGbvFBB4ZH5G4kBrM-2F24wI7xV7JjEin5Ow9Y4mNS8b-2Fau-2FiuUzMG4YxRSkyhTqnxmSgt2kK7UHkU476PrVT4e56TKVwcR4UiU1nQ0n7ZDsQgFmoZQk-2BOJOg0LG-2BXgj35oV-2Ba4bU195bwOS305inmrXpYyc9lMrqy5Hfgg0E6fFy1hUkCTvX8gWkD7q4FqllPzz9y7DpeEZ4ukqsgPy6UOMB3GjCyzZqdLPXilVWiwoLmFEyWN7aoRZu7BSAbZemUs-2FF-2F8uubP1cNB7CuM8fb3NccjBGpB-2FpvsTagDfbsGUwWlTDqRlTiLU-2BXmeLYgkXG0CZDRPmD5dlPU3BVxOrFzHnoLMdQ-3D-3D_jB6DZ9HgcDSN7kqVyyc5AQ8r3c4YQh9d5AuCJFkPEYQNRsqU8qqc296q5rpB4ev3QTjJb9IN71fEPXJG3NCyN-2FT7eHIraTZRBs1e4PCmAHFuDUpP4Pf9J1WrEcsk3QMVV0No-2FHGYm2ZbClIG-2BrmE5YRg1SWHjfp-2FqoylB2yx95TzlZzwG7bvGKA29yo9PVICsCW7HChKZWn-2FeQs3qr0bGU60GniC-2FI13ysUq1VW-2F03bEmDsRfUQ1k-2FNAemZaDiv6UG8mkHEbWJiI9cszLJAVx0yHjwI2RY63cNgRD2ecyH2eRCWqCvtn58nl-2B-2F15aICjlAaRqY8MNgVKM0TzNKF0Ko275UQDW4XRvbyrgtIJ08sd85z4WRYH43RapItkLVubg2Lug3UDoJJdnxr2DFbKtgSRQLVKZjTYqonkAcICBDw-3D&amp;source=gmail&amp;ust=1548176119303000&amp;usg=AFQjCNHCyF8mivZiyChcdxboAEpF7z891A"> Download PDF </a>
+                                                                                                                                                </td>
+                                                                                                                                              </tr>
+                                                                                                                                              <tr>
+                                                                                                                                                <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;direction:ltr;text-align:left" align="left"> Download link expires 1/19/19 </td>
+                                                                                                                                              </tr>
+                                                                                                                                            </tbody>
+                                                                                                                                          </table>
+                                                                                                                                        </td>
+                                                                                                                                      </tr>
+                                                                                                                                    </tbody>
+                                                                                                                                  </table>
+                                                                                                                                </td>
+                                                                                                                              </tr>
+                                                                                                                            </tbody>
+                                                                                                                          </table>
+                                                                                                                        </td>
+                                                                                                                      </tr>
+                                                                                                                    </tbody>
+                                                                                                                  </table>
+                                                                                                                </td>
+                                                                                                              </tr>
+                                                                                                            </tbody>
+                                                                                                          </table>
+                                                                                                          <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0;border-collapse:collapse;width:100%;border:none">
+                                                                                                            <tbody>
+                                                                                                              <tr>
+                                                                                                                <td class="m_8137549319940100129m_-5136504817035928352tripReference" style="line-height:1px;font-size:1px;color:#ffffff"> xid44ce2c4b-9195-4037-945c-
+                                                                                                                  <wbr>73b239038fdc 
+                                                                                                                  </td>
+                                                                                                                </tr>
+                                                                                                                <tr>
+                                                                                                                  <td class="m_8137549319940100129m_-5136504817035928352zdReceiptIdentifier" style="line-height:1px;font-size:1px;color:#ffffff"> pGvlI2ANUbXFfyEOgxta1RMV082993 </td>
+                                                                                                                </tr>
+                                                                                                              </tbody>
+                                                                                                            </table>
+                                                                                                            <table border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%" width="100%">
+                                                                                                              <tbody>
+                                                                                                                <tr>
+                                                                                                                  <td class="m_8137549319940100129m_-513650481703592835260px m_8137549319940100129m_-5136504817035928352lhreset" style="font-size:1px;line-height:1px;padding-bottom:40px">&nbsp;</td>
+                                                                                                                </tr>
+                                                                                                              </tbody>
+                                                                                                            </table>
+                                                                                                          </td>
+                                                                                                        </tr>
+                                                                                                      </tbody>
+                                                                                                    </table>
+                                                                                                  </td>
+                                                                                                </tr>
+                                                                                              </tbody>
+                                                                                            </table>
+                                                                                          </td>
+                                                                                        </tr>
+                                                                                      </tbody>
+                                                                                    </table>
+                                                                                  </td>
+                                                                                </tr>
+                                                                              </tbody>
+                                                                            </table>
+                                                                          </td>
+                                                                        </tr>
+                                                                      </tbody>
+                                                                    </table>
+                                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                      <tbody>
+                                                                        <tr>
+                                                                          <td class="m_8137549319940100129m_-5136504817035928352outsidegutter" align="left" style="background-color:rgb(248,248,250);padding:0px 14px 0px 14px;direction:ltr;text-align:left">
+                                                                            <table border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                              <tbody>
+                                                                                <tr>
+                                                                                  <td style="direction:ltr;text-align:left">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" class="m_8137549319940100129m_-5136504817035928352t1of12 m_8137549319940100129m_-5136504817035928352layout" align="left" style="border:none;border-collapse:collapse;border-spacing:0;max-width:56px;width:100%">
+                                                                                      <tbody>
+                                                                                        <tr>
+                                                                                          <td style="font-size:1px;height:1px;line-height:1px;padding-left:0px!important;padding-right:0px!important;direction:ltr;text-align:left">
+                                                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:fixed;width:100%">
+                                                                                              <tbody>
+                                                                                                <tr>
+                                                                                                  <td style="line-height:1px;font-size:1px;direction:ltr;text-align:left">&nbsp;</td>
+                                                                                                </tr>
+                                                                                              </tbody>
+                                                                                            </table>
+                                                                                          </td>
+                                                                                        </tr>
+                                                                                      </tbody>
+                                                                                    </table>
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" class="m_8137549319940100129m_-5136504817035928352t11of12" align="left" style="border:none;border-collapse:collapse;border-spacing:0;max-width:616px;width:100%">
+                                                                                      <tbody>
+                                                                                        <tr>
+                                                                                          <td style="padding:45px 0px 25px 0px;direction:ltr;text-align:left">
+                                                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:fixed;width:100%">
+                                                                                              <tbody>
+                                                                                                <tr>
+                                                                                                  <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;padding-bottom:15px;padding-left:12px;padding-right:12px;direction:ltr;text-align:left"> You rode with {{driver}} </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                  <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:0px;line-height:28px;direction:ltr;text-align:left">
+                                                                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                      <tbody>
+                                                                                                        <tr>
+                                                                                                          <td align="left" style="direction:ltr;text-align:left">
+                                                                                                            <table border="0" cellpadding="0" cellspacing="0" class="m_8137549319940100129m_-5136504817035928352t7of12" style="border:none;border-collapse:collapse;border-spacing:0;display:inline-block;max-width:392px;vertical-align:top;width:100%">
+                                                                                                              <tbody>
+                                                                                                                <tr>
+                                                                                                                  <td style="padding:8px 12px 8px 12px;direction:ltr;text-align:left">
+                                                                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:fixed;width:100%">
+                                                                                                                      <tbody>
+                                                                                                                        <tr>
+                                                                                                                          <td style="direction:ltr;text-align:left">
+                                                                                                                            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                                              <tbody>
+                                                                                                                                <tr>
+                                                                                                                                  <td align="left" style="direction:ltr;text-align:left">
+                                                                                                                                    <table border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                                                      <tbody>
+                                                                                                                                        <tr>
+                                                                                                                                          <td style="direction:ltr;text-align:left">
+                                                                                                                                            <table border="0" cellpadding="0" cellspacing="0" class="m_8137549319940100129m_-51365048170359283523of12" align="left" style="border:none;border-collapse:collapse;border-spacing:0;display:inline-block;max-width:190px;vertical-align:top;width:100%">
+                                                                                                                                              <tbody>
+                                                                                                                                                <tr>
+                                                                                                                                                  <td style="padding:10px 0px 10px 0px;direction:ltr;text-align:left">
+                                                                                                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:auto;width:100%">
+                                                                                                                                                      <tbody>
+                                                                                                                                                        <tr>
+                                                                                                                                                          <td style="padding-right:10px;direction:ltr;text-align:left">
+                                                                                                                                                            <img src="https://ci6.googleusercontent.com/proxy/tt5isbLv7Z243lV8NbO3SDeRyISEFU2btHUdsdSSozxBe42Tqi09kpmzB2uNXnnzZaG_opYOjXJg_uW4bt4V5WRwke38lovOmYGd3ryC2Um36XCOtbCdNbq2aqaacVpJri1UZN50WL1pgPRgRaX8gceKx3nXRIUvpCq6iCHLCU5JuEWFAe1TYo0c7TBeSM0Q4VILLnZN2aNNocmDlVFH_8L0HpDsf6Ui3ODt7m5-zAQkCKZ2ftnvjV5Rdrt7FWHYTrxeDU0f9t3xNTmrwXW87wRDVPpeH4jWll1bM-qA2mbW1gQaQ06VYwZyqZpThhcXKYylPmMtlYxgLhzymOJ8rMWklAo0zpvOZPi3eD-4Obtn_Zrft61aUseS6fL2YF1nQIdjhgy2va-dKuMh6HFXPmsiHi2ZIKJtteejEP7vr2udlQ0HGKepUTgLgXUaYsDY3TjQqTL5OrnCOzn__qtL20iJHjbEk0H-4P-vcgBo1ffCGi91zZFQ2Xv7NZMC9xtfwD2RNVfn0_9bTrLy9YShGDmmrzt9DqmJ1iHe99jvn6lOB96ZJ1m2uY7f5R-9aFgplWmywSFxHPZb5kbIWSJ6-ybg1lU8zf-8qpfFhR33pYru-8OsKS1Riy0X0QiVbRELAz8u5dgSAaGufw=s0-d-e1-ft#https://d1w2poirtb3as9.cloudfront.net/ceb4ef2addb74fa350c6.jpeg?Expires=1545358559&amp;Signature=SCjdPRpiGHW4D76I94S-7PQn8sXlUul5ru4muEyj26LVr1jsayP-5lhZEYB3D7GQQXbM9YsGt5xPLdNd3zEEV6buIAogbC--h5U81MyPfK8wcgT~7BWefCSMmZbZN7Z3iZ1diJbirt~xQ~J4P4zGzIVp-693Ge1Y40Hpr7dWa0LtKj9E~dSodYhaAuTnHCABoeDmuJ61Qinfh-NCh2YHlohTQcQH5xTdoNnwmND4qIrBQRVnyfMbwWCdT7mFtLscKZGVsk9PruApnLuqtWbmlCTvIL2woi1R3jjLMujZd-xtpKSV~~6cnv6rULO7YQ-5mgFvmkIE1Sn5rgk9S23yrw__&amp;Key-Pair-Id=APKAJSDH2OZQQSA64LQQ" width="86" height="" border="0" style="clear:both;display:block;height:auto;max-height:86px;max-width:86px;outline:none;text-decoration:none;width:100%;border-radius:50%" class="CToWUd">
+                                                                                                                                                            </td>
+                                                                                                                                                            <td style="direction:ltr;text-align:left">
+                                                                                                                                                              <img src="https://ci5.googleusercontent.com/proxy/tyfU3TsSe4mOYarS_-IbiYoi2AcfjzFPT_j6V7ONfQ2M7TrMSFFUHYdu_w0ExQLuL7sbLXhMCr0_Y5J2nVtynRyqiBTN89UEVdwlKxerlVkmT20=s0-d-e1-ft#https://ddy3743yrdr1t.cloudfront.net/US/excellent_service/v2.png" width="62" height="" border="0" style="clear:both;display:block;height:auto;max-height:62px;max-width:62px;outline:none;text-decoration:none;width:100%" class="CToWUd">
+                                                                                                                                                              </td>
+                                                                                                                                                            </tr>
+                                                                                                                                                          </tbody>
+                                                                                                                                                        </table>
+                                                                                                                                                      </td>
+                                                                                                                                                    </tr>
+                                                                                                                                                  </tbody>
+                                                                                                                                                </table>
+                                                                                                                                                <table border="0" cellpadding="0" cellspacing="0" class="m_8137549319940100129m_-51365048170359283523of12" align="left" style="border:none;border-collapse:collapse;border-spacing:0;max-width:168px;width:initial">
+                                                                                                                                                  <tbody>
+                                                                                                                                                    <tr>
+                                                                                                                                                      <td style="padding:10px 0px 10px 0px;direction:ltr;text-align:left">
+                                                                                                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:auto;width:100%">
+                                                                                                                                                          <tbody>
+                                                                                                                                                            <tr>
+                                                                                                                                                              <td style="direction:ltr;text-align:left">
+                                                                                                                                                                <table border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:initial">
+                                                                                                                                                                  <tbody>
+                                                                                                                                                                    <tr>
+                                                                                                                                                                      <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1 m_8137549319940100129m_-5136504817035928352black" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:14px;line-height:14px;padding-right:3px;direction:ltr;text-align:left"> 4.92 </td>
+                                                                                                                                                                      <td style="padding-right:3px;direction:ltr;text-align:left">
+                                                                                                                                                                        <img src="https://ci3.googleusercontent.com/proxy/JuQOL_Gqs9j_RPKz6rPoc1fzJueTkCSUyYAxy4if2RjphZzs3OJOp66En9md1Ip0XJt9MW0wR9jQfdq4D_HjOtmadlAHmazyv2y3XEsIIg9Y6GdzDaAY=s0-d-e1-ft#https://s3.amazonaws.com/uber-static/emails/2017/01/receipt/STAR.png" width="13" height="" border="0" style="clear:both;display:block;height:auto;max-height:13px;max-width:13px;outline:none;text-decoration:none;width:100%" class="CToWUd">
+                                                                                                                                                                        </td>
+                                                                                                                                                                        <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:14px;line-height:14px;direction:ltr;text-align:left"> Rating </td>
+                                                                                                                                                                      </tr>
+                                                                                                                                                                    </tbody>
+                                                                                                                                                                  </table>
+                                                                                                                                                                </td>
+                                                                                                                                                              </tr>
+                                                                                                                                                              <tr>
+                                                                                                                                                                <td style="padding-top:16px;padding-bottom:16px;direction:ltr;text-align:left">
+                                                                                                                                                                  <table width="117" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:117px">
+                                                                                                                                                                    <tbody>
+                                                                                                                                                                      <tr>
+                                                                                                                                                                        <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1 m_8137549319940100129m_-5136504817035928352black" style="background-color:rgb(39,110,241);color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:1px;line-height:1px;direction:ltr;text-align:left">&nbsp;</td>
+                                                                                                                                                                      </tr>
+                                                                                                                                                                    </tbody>
+                                                                                                                                                                  </table>
+                                                                                                                                                                </td>
+                                                                                                                                                              </tr>
+                                                                                                                                                              <tr>
+                                                                                                                                                                <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p2" style="color:rgb(0,0,0);font-family:'Uber18-Text-Bold','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:14px;line-height:28px;direction:ltr;text-align:left"> Top Driver Compliment 
+                                                                                                                                                                  <br>
+                                                                                                                                                                    <span class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1" style="color:#000000;font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:14px;line-height:28px"> "Excellent Service" </span>
+                                                                                                                                                                  </td>
+                                                                                                                                                                </tr>
+                                                                                                                                                              </tbody>
+                                                                                                                                                            </table>
+                                                                                                                                                          </td>
+                                                                                                                                                        </tr>
+                                                                                                                                                      </tbody>
+                                                                                                                                                    </table>
+                                                                                                                                                  </td>
+                                                                                                                                                </tr>
+                                                                                                                                              </tbody>
+                                                                                                                                            </table>
+                                                                                                                                          </td>
+                                                                                                                                        </tr>
+                                                                                                                                      </tbody>
+                                                                                                                                    </table>
+                                                                                                                                  </td>
+                                                                                                                                </tr>
+                                                                                                                              </tbody>
+                                                                                                                            </table>
+                                                                                                                          </td>
+                                                                                                                        </tr>
+                                                                                                                      </tbody>
+                                                                                                                    </table>
+                                                                                                                    <table border="0" cellpadding="0" cellspacing="0" class="m_8137549319940100129m_-5136504817035928352t4of12" style="border:none;border-collapse:collapse;border-spacing:0;display:inline-block;max-width:224px;vertical-align:top;width:100%">
+                                                                                                                      <tbody>
+                                                                                                                        <tr>
+                                                                                                                          <td style="padding:10px 12px 10px 12px;direction:ltr;text-align:left">
+                                                                                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:fixed;width:100%">
+                                                                                                                              <tbody>
+                                                                                                                                <tr>
+                                                                                                                                  <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:16px;padding-bottom:14px;direction:ltr;text-align:left"> How was your ride? </td>
+                                                                                                                                </tr>
+                                                                                                                                <tr>
+                                                                                                                                  <td style="direction:ltr;text-align:left">
+                                                                                                                                    <div class="m_8137549319940100129m_-5136504817035928352desktopContent m_8137549319940100129m_-5136504817035928352btn m_8137549319940100129m_-5136504817035928352cta" lang="x-btn" style="font-family:'Uber18-Text-Bold',Helvetica,Arial,sans-serif!important;font-size:14px;line-height:20px;text-transform:uppercase">
+                                                                                                                                      <a href="https://email.uber.com/wf/click?upn=E5Fht-2Bzc2SrMWnjw-2Brx3-2BCge-2BTDCYy8uto5SQzU7fOdBDNY46OAa7GlNbkMJdtVTsFQ4yXpds12A6Co5frQ6LpLEU-2FgjwjbqAL7CkcL-2FfAw-3D_jB6DZ9HgcDSN7kqVyyc5AQ8r3c4YQh9d5AuCJFkPEYQNRsqU8qqc296q5rpB4ev3QTjJb9IN71fEPXJG3NCyN-2FT7eHIraTZRBs1e4PCmAHFuDUpP4Pf9J1WrEcsk3QMVV0No-2FHGYm2ZbClIG-2BrmE5YRg1SWHjfp-2FqoylB2yx95TzlZzwG7bvGKA29yo9PVICsCW7HChKZWn-2FeQs3qr0bGU60GniC-2FI13ysUq1VW-2F03bEmDsRfUQ1k-2FNAemZaDiv6UG8mkHEbWJiI9cszLJAVx8ssGx4aBJYEV6xfm8hpKFI119z5ogOyl1yyz-2BEqf17UFeeFeeJdP2twoL420-2BGn3b8d5jY-2FIhGT0LkBTqsl8-2FsemkH978woVjByVzHdxI7LPg6M3xu9-2F-2BEBqtfKqNutwz-2Bail1Ohb-2F1GpgkoWIypGw-3D" style="background-color:#276ef1;border-color:#276ef1;border-radius:0px;border-style:solid;border-width:13px 16px;color:#ffffff;display:inline-block;letter-spacing:1px;max-width:300px;min-width:100px;text-align:center;text-decoration:none;text-transform:uppercase" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://email.uber.com/wf/click?upn%3DE5Fht-2Bzc2SrMWnjw-2Brx3-2BCge-2BTDCYy8uto5SQzU7fOdBDNY46OAa7GlNbkMJdtVTsFQ4yXpds12A6Co5frQ6LpLEU-2FgjwjbqAL7CkcL-2FfAw-3D_jB6DZ9HgcDSN7kqVyyc5AQ8r3c4YQh9d5AuCJFkPEYQNRsqU8qqc296q5rpB4ev3QTjJb9IN71fEPXJG3NCyN-2FT7eHIraTZRBs1e4PCmAHFuDUpP4Pf9J1WrEcsk3QMVV0No-2FHGYm2ZbClIG-2BrmE5YRg1SWHjfp-2FqoylB2yx95TzlZzwG7bvGKA29yo9PVICsCW7HChKZWn-2FeQs3qr0bGU60GniC-2FI13ysUq1VW-2F03bEmDsRfUQ1k-2FNAemZaDiv6UG8mkHEbWJiI9cszLJAVx8ssGx4aBJYEV6xfm8hpKFI119z5ogOyl1yyz-2BEqf17UFeeFeeJdP2twoL420-2BGn3b8d5jY-2FIhGT0LkBTqsl8-2FsemkH978woVjByVzHdxI7LPg6M3xu9-2F-2BEBqtfKqNutwz-2Bail1Ohb-2F1GpgkoWIypGw-3D&amp;source=gmail&amp;ust=1548176119303000&amp;usg=AFQjCNFqdlNpm_8MtlSAWfKIMo6A01a5fg">
+                                                                                                                                        <span style="float:left;text-align:left">Rate Or Tip</span>
+                                                                                                                                        <span style="float:right;padding-top:2px;display:inline-block">
+                                                                                                                                          <img src="https://ci3.googleusercontent.com/proxy/axtMpR0rilnyjOmpHXDbY1OX1so5KIx1c7N4ECE3jBlwH30xUmvhGOGKbU87XdBRIGH3Z15F6rihfEg9xh84z0jtpziZ3_bNXW1G25P7eB2cgmNXQDw5chmkBgxC=s0-d-e1-ft#https://s3.amazonaws.com/uber-static/emails/2017/01/uber18_arrow_right.png" width="11" height="12" style="Margin-left:10px;border:none;clear:both;display:block;margin-top:2px;max-width:100%;outline:none;text-decoration:none" alt="" class="CToWUd">
+                                                                                                                                          </span>
+                                                                                                                                        </a>
+                                                                                                                                      </div>
+                                                                                                                                      <div class="m_8137549319940100129m_-5136504817035928352mobileContent m_8137549319940100129m_-5136504817035928352btn m_8137549319940100129m_-5136504817035928352cta" lang="x-btn" style="display:none;font-family:'Uber18-Text-Bold',Helvetica,Arial,sans-serif!important;font-size:14px;line-height:20px;text-transform:uppercase">
+                                                                                                                                        <a href="https://email.uber.com/wf/click?upn=xH5uxoMqK-2FRRJL3c3WgT-2FNGgq-2FxihEsxp555tySQvIuBa-2Fs7-2F7RFpL10D5usjTvD_jB6DZ9HgcDSN7kqVyyc5AQ8r3c4YQh9d5AuCJFkPEYQNRsqU8qqc296q5rpB4ev3QTjJb9IN71fEPXJG3NCyN-2FT7eHIraTZRBs1e4PCmAHFuDUpP4Pf9J1WrEcsk3QMVV0No-2FHGYm2ZbClIG-2BrmE5YRg1SWHjfp-2FqoylB2yx95TzlZzwG7bvGKA29yo9PVICsCW7HChKZWn-2FeQs3qr0bGU60GniC-2FI13ysUq1VW-2F03bEmDsRfUQ1k-2FNAemZaDiv6UG8mkHEbWJiI9cszLJAVx1vmEM4zF3N6EcSLuWUyPIJe0kCfSDwUbbhnmlM02wce3B3JTSTICKHniFIxwcbbgFUXHMTnT7JfpLtZJD2GekUx8K6oFF5DeEe64tplpN7c8Hbxh28pAZcYA4r08geY7vyzkUnoiSUB6DjeN2y0XIk-3D" style="background-color:#276ef1;border-color:#276ef1;border-radius:0px;border-style:solid;border-width:13px 16px;color:#ffffff;display:inline-block;letter-spacing:1px;max-width:300px;min-width:100px;text-align:center;text-decoration:none;text-transform:uppercase" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://email.uber.com/wf/click?upn%3DxH5uxoMqK-2FRRJL3c3WgT-2FNGgq-2FxihEsxp555tySQvIuBa-2Fs7-2F7RFpL10D5usjTvD_jB6DZ9HgcDSN7kqVyyc5AQ8r3c4YQh9d5AuCJFkPEYQNRsqU8qqc296q5rpB4ev3QTjJb9IN71fEPXJG3NCyN-2FT7eHIraTZRBs1e4PCmAHFuDUpP4Pf9J1WrEcsk3QMVV0No-2FHGYm2ZbClIG-2BrmE5YRg1SWHjfp-2FqoylB2yx95TzlZzwG7bvGKA29yo9PVICsCW7HChKZWn-2FeQs3qr0bGU60GniC-2FI13ysUq1VW-2F03bEmDsRfUQ1k-2FNAemZaDiv6UG8mkHEbWJiI9cszLJAVx1vmEM4zF3N6EcSLuWUyPIJe0kCfSDwUbbhnmlM02wce3B3JTSTICKHniFIxwcbbgFUXHMTnT7JfpLtZJD2GekUx8K6oFF5DeEe64tplpN7c8Hbxh28pAZcYA4r08geY7vyzkUnoiSUB6DjeN2y0XIk-3D&amp;source=gmail&amp;ust=1548176119304000&amp;usg=AFQjCNEFjxm78zHxzoIpozxjlzMDtm9HFg">
+                                                                                                                                          <span style="float:left;text-align:left">Rate Or Tip</span>
+                                                                                                                                          <span style="float:right;padding-top:2px;display:inline-block">
+                                                                                                                                            <img src="https://ci3.googleusercontent.com/proxy/axtMpR0rilnyjOmpHXDbY1OX1so5KIx1c7N4ECE3jBlwH30xUmvhGOGKbU87XdBRIGH3Z15F6rihfEg9xh84z0jtpziZ3_bNXW1G25P7eB2cgmNXQDw5chmkBgxC=s0-d-e1-ft#https://s3.amazonaws.com/uber-static/emails/2017/01/uber18_arrow_right.png" width="11" height="12" style="Margin-left:10px;border:none;clear:both;display:block;margin-top:2px;max-width:100%;outline:none;text-decoration:none" alt="" class="CToWUd">
+                                                                                                                                            </span>
+                                                                                                                                          </a>
+                                                                                                                                        </div>
+                                                                                                                                      </td>
+                                                                                                                                    </tr>
+                                                                                                                                  </tbody>
+                                                                                                                                </table>
+                                                                                                                              </td>
+                                                                                                                            </tr>
+                                                                                                                          </tbody>
+                                                                                                                        </table>
+                                                                                                                      </td>
+                                                                                                                    </tr>
+                                                                                                                  </tbody>
+                                                                                                                </table>
+                                                                                                                <table border="0" cellpadding="0" cellspacing="0" class="m_8137549319940100129m_-5136504817035928352t10of12" style="border:none;border-collapse:collapse;border-spacing:0;max-width:575px;width:100%">
+                                                                                                                  <tbody>
+                                                                                                                    <tr>
+                                                                                                                      <td style="padding:25px 12px 10px 12px;direction:ltr;text-align:left">
+                                                                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:fixed;width:100%">
+                                                                                                                          <tbody>
+                                                                                                                            <tr>
+                                                                                                                              <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1" valign="top" align="left" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:12px;line-height:20px;padding-bottom:10px;padding-right:12px;padding-top:0px;direction:ltr;text-align:left"> Rasier-NY, LLC (TNC170002) </td>
+                                                                                                                            </tr>
+                                                                                                                          </tbody>
+                                                                                                                        </table>
+                                                                                                                      </td>
+                                                                                                                    </tr>
+                                                                                                                  </tbody>
+                                                                                                                </table>
+                                                                                                              </td>
+                                                                                                            </tr>
+                                                                                                          </tbody>
+                                                                                                        </table>
+                                                                                                      </td>
+                                                                                                    </tr>
+                                                                                                  </tbody>
+                                                                                                </table>
+                                                                                              </td>
+                                                                                            </tr>
+                                                                                          </tbody>
+                                                                                        </table>
+                                                                                      </td>
+                                                                                    </tr>
+                                                                                  </tbody>
+                                                                                </table>
+                                                                                <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                  <tbody>
+                                                                                    <tr>
+                                                                                      <td class="m_8137549319940100129m_-5136504817035928352outsidegutter" align="left" style="background-color:rgb(248,248,250);padding:0px 14px 0px 14px;direction:ltr;text-align:left">
+                                                                                        <table border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                          <tbody>
+                                                                                            <tr>
+                                                                                              <td style="direction:ltr;text-align:left">
+                                                                                                <table border="0" cellpadding="0" cellspacing="0" class="m_8137549319940100129m_-5136504817035928352t10of12" align="center" style="Margin:0 auto;border:none;border-collapse:collapse;border-spacing:0;max-width:560px;width:100%">
+                                                                                                  <tbody>
+                                                                                                    <tr>
+                                                                                                      <td style="padding:0px 12px 30px 12px;direction:ltr;text-align:left">
+                                                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:fixed;width:100%">
+                                                                                                          <tbody>
+                                                                                                            <tr>
+                                                                                                              <td class="m_8137549319940100129m_-5136504817035928352p2" style="color:rgb(0,0,0);font-family:'UberMoveText-Regular','HelveticaNeue',Helvetica,Arial,sans-serif;font-size:16px;line-height:22px;padding-bottom:7px;padding-top:7px;direction:ltr;text-align:left"> When you ride with Uber, your trips are insured in case of a covered accident. 
+                                                                                                                <a style="color:#276ef1;font-family:'Uber18-Text-Bold','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:20px;text-decoration:none" href="https://email.uber.com/wf/click?upn=Ac78kxLEU5x8sS8qIl5fKdecDS2-2BFZ7F7WZZvRKQflvZC7jwj9Ol1aO5L3-2FlNrMp_jB6DZ9HgcDSN7kqVyyc5AQ8r3c4YQh9d5AuCJFkPEYQNRsqU8qqc296q5rpB4ev3QTjJb9IN71fEPXJG3NCyN-2FT7eHIraTZRBs1e4PCmAHFuDUpP4Pf9J1WrEcsk3QMVV0No-2FHGYm2ZbClIG-2BrmE5YRg1SWHjfp-2FqoylB2yx95TzlZzwG7bvGKA29yo9PVICsCW7HChKZWn-2FeQs3qr0bGU60GniC-2FI13ysUq1VW-2F03bEmDsRfUQ1k-2FNAemZaDiv6UG8mkHEbWJiI9cszLJAVx75-2BAmEbBc12-2F7EvpF51-2FNvthpbvIRHthPPU0lBnAlHzJaJx0K9MqIQgz1RuRqULHKSILoxOjVReRij3e7I1KH9xDDGQRCt4CD-2Fd2qCSFHtNscMnAUdfgzKDKteX1kYdSg4LZ1mV1NKVIvKeJm6Wwtc-3D" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://email.uber.com/wf/click?upn%3DAc78kxLEU5x8sS8qIl5fKdecDS2-2BFZ7F7WZZvRKQflvZC7jwj9Ol1aO5L3-2FlNrMp_jB6DZ9HgcDSN7kqVyyc5AQ8r3c4YQh9d5AuCJFkPEYQNRsqU8qqc296q5rpB4ev3QTjJb9IN71fEPXJG3NCyN-2FT7eHIraTZRBs1e4PCmAHFuDUpP4Pf9J1WrEcsk3QMVV0No-2FHGYm2ZbClIG-2BrmE5YRg1SWHjfp-2FqoylB2yx95TzlZzwG7bvGKA29yo9PVICsCW7HChKZWn-2FeQs3qr0bGU60GniC-2FI13ysUq1VW-2F03bEmDsRfUQ1k-2FNAemZaDiv6UG8mkHEbWJiI9cszLJAVx75-2BAmEbBc12-2F7EvpF51-2FNvthpbvIRHthPPU0lBnAlHzJaJx0K9MqIQgz1RuRqULHKSILoxOjVReRij3e7I1KH9xDDGQRCt4CD-2Fd2qCSFHtNscMnAUdfgzKDKteX1kYdSg4LZ1mV1NKVIvKeJm6Wwtc-3D&amp;source=gmail&amp;ust=1548176119304000&amp;usg=AFQjCNHcKtcBgqtWNBWz7ac1h8_ENs_lPQ">Learn more.</a>
+                                                                                                              </td>
+                                                                                                            </tr>
+                                                                                                          </tbody>
+                                                                                                        </table>
+                                                                                                      </td>
+                                                                                                    </tr>
+                                                                                                  </tbody>
+                                                                                                </table>
+                                                                                              </td>
+                                                                                            </tr>
+                                                                                          </tbody>
+                                                                                        </table>
+                                                                                      </td>
+                                                                                    </tr>
+                                                                                  </tbody>
+                                                                                </table>
+                                                                                <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                  <tbody>
+                                                                                    <tr>
+                                                                                      <td class="m_8137549319940100129m_-5136504817035928352outsidegutter" align="left" style="background-color:rgb(255,255,255);padding:50px 14px 20px 14px;direction:ltr;text-align:left">
+                                                                                        <table border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                          <tbody>
+                                                                                            <tr>
+                                                                                              <td align="center">
+                                                                                                <table border="0" cellpadding="0" cellspacing="0" class="m_8137549319940100129m_-5136504817035928352t1of12 m_8137549319940100129m_-5136504817035928352layout" align="left" style="border:none;border-collapse:collapse;border-spacing:0;max-width:56px;width:100%">
+                                                                                                  <tbody>
+                                                                                                    <tr>
+                                                                                                      <td style="font-size:1px;height:1px;line-height:1px;padding-left:0px!important;padding-right:0px!important;direction:ltr;text-align:left">
+                                                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:fixed;width:100%">
+                                                                                                          <tbody>
+                                                                                                            <tr>
+                                                                                                              <td style="font-size:1px;line-height:1px;height:1px;min-height:1px;direction:ltr;text-align:left">&nbsp;</td>
+                                                                                                            </tr>
+                                                                                                          </tbody>
+                                                                                                        </table>
+                                                                                                      </td>
+                                                                                                    </tr>
+                                                                                                  </tbody>
+                                                                                                </table>
+                                                                                                <table border="0" cellpadding="0" cellspacing="0" class="m_8137549319940100129m_-5136504817035928352t11of12" style="border:none;border-collapse:collapse;border-spacing:0;max-width:616px;width:100%">
+                                                                                                  <tbody>
+                                                                                                    <tr>
+                                                                                                      <td style="padding-left:0px;padding-right:0px;direction:ltr;text-align:left">
+                                                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:fixed;width:100%">
+                                                                                                          <tbody>
+                                                                                                            <tr>
+                                                                                                              <td align="left" style="direction:ltr;text-align:left">
+                                                                                                                <table border="0" cellpadding="0" cellspacing="0" width="initial" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:auto;width:initial">
+                                                                                                                  <tbody>
+                                                                                                                    <tr>
+                                                                                                                      <td style="padding-left:12px;padding-right:17px;padding-top:1px;direction:ltr;text-align:left" align="left" valign="middle">
+                                                                                                                        <div class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1 m_8137549319940100129m_-5136504817035928352white" style="background-color:#000000;border-radius:20px;color:#ffffff;font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:12px;line-height:12px;padding:5px 12px"> UberX </div>
+                                                                                                                      </td>
+                                                                                                                      <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1" valign="middle" align="left" style="color:#595959;font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;white-space:nowrap;direction:ltr;text-align:left"> {{miles}} | {{minutes}}</td>
+                                                                                                                    </tr>
+                                                                                                                  </tbody>
+                                                                                                                </table>
+                                                                                                                <table border="0" cellpadding="0" cellspacing="0" class="m_8137549319940100129m_-5136504817035928352t5of12" align="left" style="border:none;border-collapse:collapse;border-spacing:0;direction:ltr;max-width:280px;width:100%">
+                                                                                                                  <tbody>
+                                                                                                                    <tr>
+                                                                                                                      <td style="padding:20px 12px 20px 12px;direction:ltr;text-align:left">
+                                                                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:fixed;width:100%">
+                                                                                                                          <tbody>
+                                                                                                                            <tr>
+                                                                                                                              <td align="left" style="direction:ltr;text-align:left">
+                                                                                                                                <table border="0" cellpadding="0" cellspacing="0" width="initial" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:auto;width:100%">
+                                                                                                                                  <tbody>
+                                                                                                                                    <tr>
+                                                                                                                                      <td width="4" style="width:4px;font-size:1px;line-height:1px" valign="top">
+                                                                                                                                        <img src="https://ci5.googleusercontent.com/proxy/dOstzBLKEalt3I6YWLO5Y0EgZRHDqxoUNueaI9z96cXnOmslm5Aa1XMJzcRGy4KaQ_T50v4SqMCzZlPXwHMXhQyXrPEJqxU4eQ1wncAF7ZZpdNf0ElZKUue4sNT1xCICqWoKPm-h-wN-uVpZipeL259f=s0-d-e1-ft#https://s3.amazonaws.com/uber-static/emails/2017/01/receipt/receipt_18_square_top_fill_left.png" width="4" height="17" border="0" style="clear:both;display:block;height:17px;max-width:100%;outline:none;text-decoration:none;width:4px" class="CToWUd">
+                                                                                                                                        </td>
+                                                                                                                                        <td style="font-size:1px;line-height:1px;width:1px;background-color:#000000" valign="top">
+                                                                                                                                          <img src="https://ci3.googleusercontent.com/proxy/M86Qn0kxt9Q6SosEoGZF3i0SsO4mCuuZVxAVfNeMz0kPG8498q_z8MqbtuylVckiQDqszWBeBSt0hmezkNqNg19ooCSb5LLAuJzIAivjIvhKtzAMa3wbzIZrxsRb2-GEqe44_JnIeYFTLJsmkHX48G1sqWE=s0-d-e1-ft#https://s3.amazonaws.com/uber-static/emails/2017/01/receipt/receipt_18_square_top_fill_middle.png" width="1" height="17" border="0" style="clear:both;display:block;height:17px;max-width:100%;outline:none;text-decoration:none;width:1px" class="CToWUd">
+                                                                                                                                          </td>
+                                                                                                                                          <td width="3" style="width:3px;font-size:1px;line-height:1px" valign="top">
+                                                                                                                                            <img src="https://ci5.googleusercontent.com/proxy/d7dQ88lG-0qZXECxWl-F_OxJkEAIDRfVVca3vTvnjN1u6l_qtiv_eCenqoKwPdKJkQwCGXSs35KeDyRqwY_dMawEcjPEpM_QmyT58RQ1sz6XwEOiC8mydz8yxA1FgrP63sO64yw6fTl6ilwucYpK-23TGA=s0-d-e1-ft#https://s3.amazonaws.com/uber-static/emails/2017/01/receipt/receipt_18_square_top_fill_right.png" width="3" height="17" border="0" style="clear:both;display:block;height:17px;max-width:100%;outline:none;text-decoration:none;width:3px" class="CToWUd">
+                                                                                                                                            </td>
+                                                                                                                                            <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p2 m_8137549319940100129m_-5136504817035928352black" valign="top" style="color:rgb(0,0,0);font-family:'Uber18-Text-Bold','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;padding-bottom:28px;padding-left:34px;direction:ltr;text-align:left">
+                                                                                                                                              <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                                                                <tbody>
+                                                                                                                                                  <tr>
+                                                                                                                                                    <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p2 m_8137549319940100129m_-5136504817035928352black" valign="top" align="left" style="color:rgb(0,0,0);font-family:'Uber18-Text-Bold','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;direction:ltr;text-align:left"> {{start_time}} </td>
+                                                                                                                                                  </tr>
+                                                                                                                                                  <tr>
+                                                                                                                                                    <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1" align="left" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;direction:ltr;text-align:left"> {{start_addr}} </td>
+                                                                                                                                                  </tr>
+                                                                                                                                                </tbody>
+                                                                                                                                              </table>
+                                                                                                                                            </td>
+                                                                                                                                          </tr>
+                                                                                                                                        </tbody>
+                                                                                                                                      </table>
+                                                                                                                                      <table border="0" cellpadding="0" cellspacing="0" width="initial" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:auto;width:100%">
+                                                                                                                                        <tbody>
+                                                                                                                                          <tr>
+                                                                                                                                            <td width="4" style="width:4px;font-size:1px;line-height:1px" valign="top">
+                                                                                                                                              <img src="https://ci5.googleusercontent.com/proxy/dOstzBLKEalt3I6YWLO5Y0EgZRHDqxoUNueaI9z96cXnOmslm5Aa1XMJzcRGy4KaQ_T50v4SqMCzZlPXwHMXhQyXrPEJqxU4eQ1wncAF7ZZpdNf0ElZKUue4sNT1xCICqWoKPm-h-wN-uVpZipeL259f=s0-d-e1-ft#https://s3.amazonaws.com/uber-static/emails/2017/01/receipt/receipt_18_square_top_fill_left.png" width="4" height="17" border="0" style="clear:both;display:block;height:17px;max-width:100%;outline:none;text-decoration:none;width:4px" class="CToWUd">
+                                                                                                                                              </td>
+                                                                                                                                              <td style="font-size:1px;line-height:1px;width:1px;background-color:#ffffff" valign="top">
+                                                                                                                                                <img src="https://ci3.googleusercontent.com/proxy/vdy5Eka9lA4iQmchGa3G9I4MPQavEAzLvLn9gnTtCwZSqh__Ic3kXOu2RaNm542_BRlW64KDpvZBb9JJLVxB-iQx7W4PVqABOjq463GwKiAnr14wlk9rCMNaGk7cQNpFUbJg1w5Mf0b_XLfE=s0-d-e1-ft#https://s3.amazonaws.com/uber-static/emails/2017/01/receipt_18_square_btm_fill_middle.png" width="1" height="20" border="0" style="clear:both;display:block;height:20px;max-width:100%;outline:none;text-decoration:none;width:1px" class="CToWUd">
+                                                                                                                                                </td>
+                                                                                                                                                <td width="3" style="width:3px;font-size:1px;line-height:1px" valign="top">
+                                                                                                                                                  <img src="https://ci5.googleusercontent.com/proxy/d7dQ88lG-0qZXECxWl-F_OxJkEAIDRfVVca3vTvnjN1u6l_qtiv_eCenqoKwPdKJkQwCGXSs35KeDyRqwY_dMawEcjPEpM_QmyT58RQ1sz6XwEOiC8mydz8yxA1FgrP63sO64yw6fTl6ilwucYpK-23TGA=s0-d-e1-ft#https://s3.amazonaws.com/uber-static/emails/2017/01/receipt/receipt_18_square_top_fill_right.png" width="3" height="17" border="0" style="clear:both;display:block;height:17px;max-width:100%;outline:none;text-decoration:none;width:3px" class="CToWUd">
+                                                                                                                                                  </td>
+                                                                                                                                                  <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p2 m_8137549319940100129m_-5136504817035928352black" valign="top" style="color:rgb(0,0,0);font-family:'Uber18-Text-Bold','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:16px;padding-left:34px;direction:ltr;text-align:left">
+                                                                                                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                                                                      <tbody>
+                                                                                                                                                        <tr>
+                                                                                                                                                          <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p2 m_8137549319940100129m_-5136504817035928352black" valign="top" style="color:rgb(0,0,0);font-family:'Uber18-Text-Bold','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;direction:ltr;text-align:left"> {{end_time}}  </td>
+                                                                                                                                                        </tr>
+                                                                                                                                                        <tr>
+                                                                                                                                                          <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;direction:ltr;text-align:left">
+                                                                                                                                                            {{end_addr}}
+                                                                                                                                                          </td>
+                                                                                                                                                        </tr>
+                                                                                                                                                      </tbody>
+                                                                                                                                                    </table>
+                                                                                                                                                  </td>
+                                                                                                                                                </tr>
+                                                                                                                                              </tbody>
+                                                                                                                                            </table>
+                                                                                                                                          </td>
+                                                                                                                                        </tr>
+                                                                                                                                      </tbody>
+                                                                                                                                    </table>
+                                                                                                                                    
+                                                                                                                                  </td>
+                                                                                                                                </tr>
+                                                                                                                              </tbody>
+                                                                                                                            </table>
+                                                                                                                            <table border="0" cellpadding="0" cellspacing="0" class="m_-2085108310444457019m_-6965920230627071579t6of12" align="left" style="border:none;border-collapse:collapse;border-spacing:0;max-width:336px;width:100%"><tbody><tr><td class="m_-2085108310444457019m_-6965920230627071579desktopMap" style="padding:20px 12px 30px 12px;direction:ltr;text-align:left"><table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:fixed;width:100%"><tbody><tr><td style="direction:ltr;text-align:left"><div class="m_-2085108310444457019m_-6965920230627071579desktopMap"><img id="m_-2085108310444457019m_-6965920230627071579map_935c3d45-4b16-4ffd-a124-a68510858333" src='../../assets/{{type}}.png' width="312" height="" border="0" style="clear:both;display:block;height:auto;max-height:358px;max-width:312px;outline:none;text-decoration:none;width:100%" data-image-whitelisted="" class="CToWUd a6T" tabindex="0"><div class="a6S" dir="ltr" style="opacity: 0.01; left: 770px; top: 1996px;"><div id=":65" class="T-I J-J5-Ji aQv T-I-ax7 L3 a5q" role="button" tabindex="0" aria-label="Download attachment map_935c3d45-4b16-4ffd-a124-a68510858333" data-tooltip-class="a1V" data-tooltip="Download"><div class="aSK J-J5-Ji aYr"></div></div><div id=":66" class="T-I J-J5-Ji aQv T-I-ax7 L3 a5q" role="button" tabindex="0" aria-label="Save attachment to Drive map_935c3d45-4b16-4ffd-a124-a68510858333" data-tooltip-class="a1V" data-tooltip="Save to Drive"><div class="wtScjd J-J5-Ji aYr aQu"><div class="T-aT4" style="display: none;"><div></div><div class="T-aT4-JX"></div></div></div></div></div></div></td></tr></tbody></table></td></tr></tbody></table>
+                                                                                                                            
+                                                                                                                            </td>
+                                                                                                                          </tr>
+                                                                                                                        </tbody>
+                                                                                                                      </table>
+                                                                                                                    </td>
+                                                                                                                  </tr>
+                                                                                                                </tbody>
+                                                                                                              </table>
+                                                                                                            </td>
+                                                                                                          </tr>
+                                                                                                        </tbody>
+                                                                                                      </table>
+                                                                                                    </td>
+                                                                                                  </tr>
+                                                                                                  <tr>
+                                                                                                    <td style="direction:ltr;text-align:left">
+                                                                                                      <div class="m_8137549319940100129m_-5136504817035928352mobileMap" style="display:none;padding-bottom:30px">
+                                                                                                        <img src='../../assets/{{type}}.png' border="0" style="width:415px;max-width:100%" data-image-whitelisted="" class="CToWUd a6T" tabindex="0">
+                                                                                                          <div class="a6S" dir="ltr" style="opacity: 0.01;">
+                                                                                                            <div id=":2nx" class="T-I J-J5-Ji aQv T-I-ax7 L3 a5q" title="Download" role="button" tabindex="0" aria-label="Download attachment map_44ce2c4b-9195-4037-945c-73b239038fdc_wide" data-tooltip-class="a1V">
+                                                                                                              <div class="aSK J-J5-Ji aYr"></div>
+                                                                                                            </div>
+                                                                                                            <div id=":2ny" class="T-I J-J5-Ji aQv T-I-ax7 L3 a5q" title="Save to Drive" role="button" tabindex="0" aria-label="Save attachment to Drive map_44ce2c4b-9195-4037-945c-73b239038fdc_wide" data-tooltip-class="a1V">
+                                                                                                              <div class="wtScjd aQu J-J5-Ji aYr">
+                                                                                                                <div class="T-aT4">
+                                                                                                                  <div></div>
+                                                                                                                  <div class="T-aT4-JX"></div>
+                                                                                                                </div>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </td>
+                                                                                                    </tr>
+                                                                                                  </tbody>
+                                                                                                </table>
+                                                                                                <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                  <tbody>
+                                                                                                    <tr>
+                                                                                                      <td align="center" style="padding-left:26px;padding-right:26px">
+                                                                                                        <table border="0" cellpadding="0" cellspacing="0" class="m_8137549319940100129m_-5136504817035928352t12of12" style="border:none;border-collapse:collapse;border-spacing:0;max-width:648px;width:100%">
+                                                                                                          <tbody>
+                                                                                                            <tr>
+                                                                                                              <td style="padding-bottom:30px;padding-left:0px;padding-right:0px;direction:ltr;text-align:left">
+                                                                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:fixed;width:100%">
+                                                                                                                  <tbody>
+                                                                                                                    <tr>
+                                                                                                                      <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1" style="background-color:#f1f1f1;color:#000000;font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px" align="center">
+                                                                                                                        <table border="0" cellpadding="0" cellspacing="0" class="m_8137549319940100129m_-5136504817035928352t10of12" style="border:none;border-collapse:collapse;border-spacing:0;max-width:584px;width:100%">
+                                                                                                                          <tbody>
+                                                                                                                            <tr>
+                                                                                                                              <td class="m_8137549319940100129m_-5136504817035928352outsidegutter" style="padding:25px 12px 25px 12px;direction:ltr;text-align:left">
+                                                                                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:auto;width:100%">
+                                                                                                                                  <tbody>
+                                                                                                                                    <tr>
+                                                                                                                                      <td style="direction:ltr;text-align:left">
+                                                                                                                                        <table border="0" cellpadding="0" cellspacing="0" class="m_8137549319940100129m_-5136504817035928352t3of12" style="border:none;border-collapse:collapse;border-spacing:0;display:inline-block;max-width:115px;vertical-align:middle;width:100%">
+                                                                                                                                          <tbody>
+                                                                                                                                            <tr>
+                                                                                                                                              <td style="padding:15px 12px 15px 12px;direction:ltr;text-align:left">
+                                                                                                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:fixed;width:100%">
+                                                                                                                                                  <tbody>
+                                                                                                                                                    <tr>
+                                                                                                                                                      <td style="direction:ltr;text-align:left">
+                                                                                                                                                        <img src="https://ci6.googleusercontent.com/proxy/kulGEO7hJ5hoGZ3b-CqtuDdWN6TBs3FH91qT48k1CuMpaiRpwvL-pYYafHFPzLZ_UsfIbKajQtmixtGsD5yaw_Ls_PrLzPsB26Tx5szZPQvI-lBvtHoQMbUGRrI=s0-d-e1-ft#https://s3.amazonaws.com/uber-static/emails/2017/01/GxGy-Icon_176x176.png" width="88" height="" border="0" style="clear:both;display:block;height:auto;max-height:88px;max-width:88px;outline:none;text-decoration:none;width:100%" class="CToWUd">
+                                                                                                                                                        </td>
+                                                                                                                                                      </tr>
+                                                                                                                                                    </tbody>
+                                                                                                                                                  </table>
+                                                                                                                                                </td>
+                                                                                                                                              </tr>
+                                                                                                                                            </tbody>
+                                                                                                                                          </table>
+                                                                                                                                          <table border="0" cellpadding="0" cellspacing="0" class="m_8137549319940100129m_-5136504817035928352t7of12" style="border:none;border-collapse:collapse;border-spacing:0;display:inline-block;max-width:392px;vertical-align:middle;width:100%">
+                                                                                                                                            <tbody>
+                                                                                                                                              <tr>
+                                                                                                                                                <td style="padding:15px 12px 15px 12px;direction:ltr;text-align:left">
+                                                                                                                                                  <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border:none;border-collapse:collapse;border-spacing:0;table-layout:auto;width:100%">
+                                                                                                                                                    <tbody>
+                                                                                                                                                      <tr>
+                                                                                                                                                        <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1" align="left" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:18px;line-height:28px;padding-bottom:6px;direction:ltr;text-align:left"> Invite your friends and family. </td>
+                                                                                                                                                      </tr>
+                                                                                                                                                      <tr>
+                                                                                                                                                        <td class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1" align="left" style="color:rgb(0,0,0);font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px;direction:ltr;text-align:left"> Share the Uber love and give friends free rides to try Uber, worth up to ₹25 each!&nbsp;
+                                                                                                                                                          <span class="m_8137549319940100129m_-5136504817035928352Uber18_text_p1" style="color:#000000;font-family:'Uber18-text-Regular','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif;font-size:16px;line-height:28px">Share code: shreyam2941ue</span>
+                                                                                                                                                        </td>
+                                                                                                                                                      </tr>
+                                                                                                                                                    </tbody>
+                                                                                                                                                  </table>
+                                                                                                                                                </td>
+                                                                                                                                              </tr>
+                                                                                                                                            </tbody>
+                                                                                                                                          </table>
+                                                                                                                                        </td>
+                                                                                                                                      </tr>
+                                                                                                                                    </tbody>
+                                                                                                                                  </table>
+                                                                                                                                </td>
+                                                                                                                              </tr>
+                                                                                                                            </tbody>
+                                                                                                                          </table>
+                                                                                                                        </td>
+                                                                                                                      </tr>
+                                                                                                                    </tbody>
+                                                                                                                  </table>
+                                                                                                                </td>
+                                                                                                              </tr>
+                                                                                                            </tbody>
+                                                                                                          </table>
+                                                                                                        </td>
+                                                                                                      </tr>
+                                                                                                    </tbody>
+                                                                                                  </table>
+                                                                                                  <span class="HOEnZb">
+                                                                                                    <font color="#888888">
+                                                                                                      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                        <tbody>
+                                                                                                          <tr>
+                                                                                                            <td align="left" style="background-color:rgb(39,110,241);padding-top:15px;padding-bottom:15px;direction:ltr;text-align:left">
+                                                                                                              <table border="0" cellpadding="0" cellspacing="0" style="border:none;border-collapse:collapse;border-spacing:0;width:100%">
+                                                                                                                <tbody>
+                                                                                                                  <tr>
+                                                                                                                    <td style="direction:ltr;text-align:left">
+                                                                                                                      <table border="0" cellpadding="0" cellspacing="0" class="m_8137549319940100129m_-5136504817035928352t4of12" align="left" style="border:none;border-collapse:collapse;border-spacing:0;max-width:234px;width:100%"></table>
+                                                                                                                    </td>
+                                                                                                                  </tr>
+                                                                                                                </tbody>
+                                                                                                              </table>
+                                                                                                            </td>
+                                                                                                          </tr>
+                                                                                                        </tbody>
+                                                                                                      </table>
+                                                                                                    </font>
+                                                                                                  </span>
+                                                                                                </td>
+                                                                                              </tr>
+                                                                                            </tbody>
+                                                                                          </table>
+                                                                                        </td>
+                                                                                      </tr>
+                                                                                    </tbody>
+                                                                                  </table>
+                                                                                </td>
+                                                                              </tr>
+                                                                            </tbody>
+                                                                          </table>
+                                                                        </td>
+                                                                      </tr>
+                                                                    </tbody>
+                                                                  </table>
+                                                                </td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
